@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 $primary-white:#fff;
 $primary-blue:#1e1666;
 $button-bg:#001075;
+$features-bg:#1F59BB;
+$features-card-subtext:#afc6ee;
+$footer-bg:#051442;
+$footer-link:#c2d6d7;
 *{
   margin: 0;
   padding: 0;
@@ -10,6 +13,7 @@ $button-bg:#001075;
 
 body{
   overflow-x: hidden;
+  
 }
 
 // Navbar Styles
@@ -63,6 +67,10 @@ body{
 //About Us
 .about-section{
   min-height: 100vh;
+
+  .static-card{
+    margin-left: 10px;
+  }
 
   .fly-card{
     margin-top: -100px;
@@ -118,9 +126,96 @@ body{
     line-height: 35px;
     letter-spacing: -.4px;
   }
-
-
 }
+
+//Features
+
+.features{
+  min-height: 90vh;
+  padding: 50px 0;
+  background: $features-bg;
+
+  #{&}-textbox{
+    p{
+      font-size: 13px;
+      color: $primary-white;
+      font-weight: 600;
+    }
+    h1{
+      font-size: 35px;
+      color: $primary-white;
+      margin-bottom: 40px;
+    }
+  }
+
+  .feature-card{
+    padding: 10px;
+  }
+  .feature-card-img{
+    align-self: center;
+  }
+
+  .feature-card-textbox{
+    h1{
+      font-size: 23px;
+      margin-bottom: 10px;
+      color: $primary-white;
+    }
+    p{
+      color: $features-card-subtext;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 25px;
+    }
+  }
+  
+
+ 
+}
+
+
+//Footer Section
+.footerSection{
+  background: $footer-bg;
+  color: $primary-white;
+  overflow-x: hidden;
+ 
+
+  .footerLinks{
+    color: $footer-link;
+  }
+  .footerLinks:hover {
+    color: $footer-link;
+   text-decoration:none;
+  }
+  .footerMainText{
+    font-size:20px;
+    font-weight: 600;
+    color: $primary-white;
+  }
+  .footer-text{
+    line-height: 1.5rem;
+    color: $footer-link;
+  }
+  .iconBox{
+    display: inline-block;
+    color: $primary-blue;
+    margin-right: 5px;
+    background-color: $primary-white;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+  
+    &:hover,
+    &:active{
+      color: $primary-blue;
+    }
+  }
+}
+
+
 
 @media screen and (max-width: 480px) {
   .header-section{
@@ -166,11 +261,21 @@ body{
       margin-top: 0;
     }
 
+    .static-card{
+      margin-left: 0;
+    }
+
     .about-maintext{
       font-size:25px;
     }
     .header-section-subtext{
       font-size: 22px;
+    }
+
+    .features{
+      .feature-card{
+        padding: 0px;
+      }
     }
   }
 }

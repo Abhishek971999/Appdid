@@ -4,7 +4,7 @@ function About() {
     return (
         <div className="about-section">
             <div className="row justify-content-center">
-                <div className="col-sm-12 col-md-6">
+                <div className="col-sm-12 col-lg-6">
                     <div className="row">
                         <div className="col-sm-10 col-md-5 p-0 fly-card">
                             <div className="card border-0 mb-2">
@@ -17,7 +17,7 @@ function About() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-10 col-md-5 p-0">
+                        <div className="col-sm-10 col-md-5 p-0 static-card">
                             <div className="card border-0 mb-2">
                                 <div className="card-image">
                                     <img src="https://codingphase.com/wp-content/uploads/2019/09/seven-img2.png" className="card-img-top" alt="Real Projects"/>
