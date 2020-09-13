@@ -1,19 +1,16 @@
 import React,{Fragment} from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.scss';
-import Header from './components/Header'
-import About from './components/About'
-import Skills from './components/Skills'
-import Features from './components/Features'
-import Footer from './components/Footer'
+import Dashboard from './components/Dashboard'
+import Contact from './components/Contact'
 function App() {
   return (
-    <Fragment>
-      <Header />
-      <About />
-      <Skills />
-      <Features />
-      <Footer />
-    </Fragment>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path='/' component={Dashboard} />
+        <Route exact path='/contact' component={Contact} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 

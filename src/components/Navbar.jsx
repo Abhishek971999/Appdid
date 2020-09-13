@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import logo from '../images/logo.png'
 import web from '../images/web.svg'
 import android from '../images/android.svg'
@@ -48,7 +49,7 @@ function Navbar() {
                         </div>
                     </li>
                     <li class="nav-item p-2">
-                        <a class="nav-link" href="#">Contact</a>
+                        <Link class="nav-link" to="/contact">Contact</Link>
                     </li>
                     </ul>
                 </div>  
