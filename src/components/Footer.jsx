@@ -42,10 +42,10 @@ function Footer() {
                     <div className="col-sm-12 col-md">
                         <h5 className="footerMainText">Follow</h5>
                         <div className="footer-social-info">
-                            <a target="_blank" aria-label="Facebook" rel="noopener" href="https://www.facebook.com/appdid/?modal=admin_todo_tour" className="iconBox facebook" ><i className="fab fa-facebook-f"></i></a>
-                            <a target="_blank" aria-label="Instagram" rel="noopener" href="https://www.instagram.com/appdid_/" className="iconBox instagram"><i className="fab fa-instagram"></i></a>
-                            <a target="_blank" aria-label="Linkedin" rel="noopener" href="https://www.linkedin.com/company/14521934" className="iconBox linkedin" ><i className="fab fa-linkedin-in"></i></a>
-                            <a target="_blank" aria-label="Twitter" rel="noopener" href="https://twitter.com/AppdidStudio/" className="iconBox twitter"><i className="fab fa-twitter"></i></a>
+                            <a target="_blank" aria-label="Facebook" rel="noopener noreferrer" href="https://www.facebook.com/appdid/?modal=admin_todo_tour" className="iconBox facebook" ><i className="fab fa-facebook-f"></i></a>
+                            <a target="_blank" aria-label="Instagram" rel="noopener noreferrer" href="https://www.instagram.com/appdid_/" className="iconBox instagram"><i className="fab fa-instagram"></i></a>
+                            <a target="_blank" aria-label="Linkedin" rel="noopener noreferrer" href="https://www.linkedin.com/company/14521934" className="iconBox linkedin" ><i className="fab fa-linkedin-in"></i></a>
+                            <a target="_blank" aria-label="Twitter" rel="noopener noreferrer" href="https://twitter.com/AppdidStudio/" className="iconBox twitter"><i className="fab fa-twitter"></i></a>
                         </div>
                     </div>
             

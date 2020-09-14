@@ -1,5 +1,7 @@
 import React from 'react'
-
+import jobready from '../images/jobready.png'
+import realprojects from '../images/realprojects.png'
+import financialfreedom from '../images/financialfreedom.png'
 function About() {
     return (
         <div className="about-section">
@@ -9,7 +11,7 @@ function About() {
                         <div className="col-sm-10 col-md-5 p-0 fly-card">
                             <div className="card border-0 mb-2">
                                 <div className="card-image">
-                                    <img src="https://codingphase.com/wp-content/uploads/2019/09/seven-img1.png" className="card-img-top" alt="Job Ready"/>
+                                    <img src={jobready} className="card-img-top" alt="Job Ready"/>
                                 </div>
                                 <div className="card-body text-center">
                                     <h5 className="card-title">Job Ready</h5>
@@ -20,7 +22,7 @@ function About() {
                         <div className="col-sm-10 col-md-5 p-0 static-card">
                             <div className="card border-0 mb-2">
                                 <div className="card-image">
-                                    <img src="https://codingphase.com/wp-content/uploads/2019/09/seven-img2.png" className="card-img-top" alt="Real Projects"/>
+                                    <img src={realprojects} className="card-img-top" alt="Real Projects"/>
                                 </div>
                                 <div className="card-body text-center">
                                     <h5 className="card-title">Real Projects</h5>
@@ -33,7 +35,7 @@ function About() {
                         <div className="col-sm-10 col-md-5 p-0  fly-card">
                             <div className="card border-0 mb-2">
                                 <div className="card-image">
-                                    <img src="https://codingphase.com/wp-content/uploads/2019/09/seven-img3.png" className="card-img-top" alt="Financial Independence"/>
+                                    <img src={financialfreedom} className="card-img-top" alt="Financial Independence"/>
                                 </div>
                                 <div className="card-body text-center">
                                     <h5 className="card-title">Financial Independence</h5>

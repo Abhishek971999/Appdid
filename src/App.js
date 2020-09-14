@@ -1,4 +1,4 @@
-import React,{Fragment} from 'react';
+import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.scss';
 import Dashboard from './components/Dashboard'
@@ -10,7 +10,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={Dashboard} />
         <Route exact path='/contact' component={Contact} />
-        <Route exact path='/course' component={CourseDetails} />
+        <Route exact path='/:coursename/course' component={CourseDetails} />
       </Switch>
     </BrowserRouter>
   );

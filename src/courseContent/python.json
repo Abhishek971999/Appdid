@@ -1,0 +1,219 @@
+{
+    "courseName": "Python Development",
+    "totalSections":18,
+    "totalTopics":82,
+    "totalProjects":3,
+    "language":"English/Hindi",
+    "syllabus": [
+        {
+            "syllabusCardID":"intro",
+            "id":"introduction",
+            "syllabusCardName": "1.Introduction to Python",
+            "syllabusCardContent":[
+                "What is Python and history of Python",
+                "Python as a Programming Language",
+                "Difference of Python 2 and Python 3",
+                "Features of Python"
+            ]
+        },
+        {
+            "syllabusCardID":"setup",
+            "id":"envSetup",
+            "syllabusCardName": "2. Setup, Installation and Environment setup",
+            "syllabusCardContent":[
+                "Installing Python",
+                "Setting Up Environment"
+            ]
+        },
+        {
+            "syllabusCardID":"first",
+            "id":"firstPythonProg",
+            "syllabusCardName": "3. First Python Program",
+            "syllabusCardContent":[
+                "Saving and Running Python code",
+                "Python Identifiers, Keywords and Indentation.",
+                "Comments in Python",
+                "Getting user input",
+                "Files"
+            ]
+        },
+        {
+            "syllabusCardID":"variable",
+            "id":"variableDataType",
+            "syllabusCardName": "4. Variable and Data Type",
+            "syllabusCardContent":[
+                "What are variable?",
+                "Declaration and use of Variables",
+                "Typecasting of Variable",
+                "Declaring and using different data types "
+            ]
+        },
+        {
+            "syllabusCardID":"operators",
+            "id":"pythonOperators",
+            "syllabusCardName": "5. Python Operators",
+            "syllabusCardContent":[
+                "What is Operators",
+                "Arithmetic",
+                "Logical",
+                "Comparison",
+                "Identity",
+                "Membership"
+            ]
+        },
+        {
+            "syllabusCardID":"strings",
+            "id":"pythonStrings",
+            "syllabusCardName": "6. Strings",
+            "syllabusCardContent":[
+                "Representing Strings",
+                "String as Arrays",
+                "String concatenation",
+                "Typecasting"
+            ]
+        },
+        {
+            "syllabusCardID":"list",
+            "id":"pythonList",
+            "syllabusCardName": "7. List",
+            "syllabusCardContent":[
+                "What is list",
+                "Creating list",
+                "Accessing list",
+                "Operation on list",
+                "Function and Methods on list"
+            ]
+        },
+        {
+            "syllabusCardID":"tuples",
+            "id":"pythonTuples",
+            "syllabusCardName": "8. Tuples",
+            "syllabusCardContent":[
+                "What is Tuple",
+                "Creating tuple",
+                "Accessing tuple",
+                "Operation on tuple",
+                "Function and Methods on tuple"
+            ]
+        },
+        {
+            "syllabusCardID":"sets",
+            "id":"pythonSets",
+            "syllabusCardName": "9. Sets",
+            "syllabusCardContent":[
+                "What is Sets",
+                "Creating sets",
+                "Accessing sets",
+                "Operation on sets",
+                "Function and Methods on sets"
+            ]
+        },
+        {
+            "syllabusCardID":"dictionary",
+            "id":"pythonDictionary",
+            "syllabusCardName": "10. Dictionary",
+            "syllabusCardContent":[
+                "What is Dictionary",
+                "Creating dictionary",
+                "Accessing dictionary",
+                "Operation on dictionary",
+                "Function and Methods on dictionary"
+            ]
+        },
+        {
+            "syllabusCardID":"flow",
+            "id":"flowControl",
+            "syllabusCardName": "11. Flow Control",
+            "syllabusCardContent":[
+                "If statement",
+                "If-else statement",
+                "Nested If-else",
+                "While Loop",
+                "For Loop",
+                "Range for loops"
+            ]
+        }
+        ,
+        {
+            "syllabusCardID":"function",
+            "id":"pythonFunction",
+            "syllabusCardName": "12. Function ",
+            "syllabusCardContent":[
+                "Defining a function ",
+                "Calling a function",
+                "Type of function ",
+                "User defined function",
+                "Anonymous function.",
+                "Lambda Function."
+            ]
+        }
+        ,
+        {
+            "syllabusCardID":"module",
+            "id":"pythonModule",
+            "syllabusCardName": "13. Module",
+            "syllabusCardContent":[
+                "Importing Module",
+                "Math Module",
+                "Random Module",
+                "Importing own module"
+            ]
+        } ,
+        {
+            "syllabusCardID":"oop",
+            "id":"objectOriented",
+            "syllabusCardName": "14. Python Object Oriented",
+            "syllabusCardContent":[
+                "Overview of OOP",
+                "Creating classes and objects",
+                "Attributes and method",
+                "Attributes and method"
+            ]
+        } ,
+        {
+            "syllabusCardID":"re",
+            "id":"regularExpression",
+            "syllabusCardName": "15. Python Regular Expression ",
+            "syllabusCardContent":[
+                "What is regular expression ",
+                "Match Function",
+                "Search function",
+                "Matching vs Searching"
+            ]
+        },
+        {
+            "syllabusCardID":"exception",
+            "id":"exceptionHandling",
+            "syllabusCardName": "16. Exception Handling",
+            "syllabusCardContent":[
+                "What is exception ",
+                "Handling an exception ",
+                "try-except-else",
+                "Argument of an exception",
+                "Python Standard Exception ",
+                "Raising an exception",
+                "User- Defined Exception"
+            ]
+        },
+        {
+            "syllabusCardID":"files",
+            "id":"filesIO",
+            "syllabusCardName": "17. File and I/O",
+            "syllabusCardContent":[
+                "Opening and closing the files",
+                "Reading and writing the files",
+                "Renaming and deleting the files"
+            ]
+        },
+        {
+            "syllabusCardID":"gui",
+            "id":"guiProgramming",
+            "syllabusCardName": "18. GUI Programming",
+            "syllabusCardContent":[
+                "Introduction",
+                "Tkinter Programming",
+                "Tkinter Widgets"
+            ]
+        }
+    ]
+}

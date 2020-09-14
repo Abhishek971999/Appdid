@@ -1,18 +1,15 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-import logo from '../images/logo.png'
+import contactheader from '../images/contactheader.png'
+import contactaddress from '../images/contactaddress.png'
+import contactphonebook from '../images/contactphonebook.png'
+import contactemail from '../images/contactemail.png'
+import Navbar from './Navbar'
 import Footer from './Footer'
 function Contact() {
     return (
         <div className="contact-page">
             <div className="contact-header">
-            <nav class="navbar navbar-expand-lg  bg-transparent p-1">
-                <div className="container">
-                    <span class="navbar-brand ml-4 mb-0 h1">
-                        <Link to="/"><img src={logo} alt="Appdid Training Logo" style={{maxHeight:'40px'}}/></Link>
-                    </span>
-                </div>
-            </nav>
+            <Navbar />
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
@@ -22,7 +19,7 @@ function Contact() {
                             </div>
                         </div>
                         <div className="col-sm-12 col-md-6 contact-page-imgBox">
-                        <img src="https://ryse.radiantthemes.com/wp-content/uploads/2019/06/Untitled-5.png" alt=""/>
+                        <img src={contactheader} alt="Contact Us"/>
                         </div>
                     </div>
                 </div>
@@ -32,16 +29,16 @@ function Contact() {
                     <h1>Get in Touch</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iste accusantium illo commodi sit rerum cumque ipsam quae enim esse.</p>
                     <div className="details-content d-flex">
-                        <img src="https://ryse.radiantthemes.com/wp-content/uploads/2019/06/contact-form-new-icon1.png" alt=""/>
+                        <img src={contactaddress} alt="Address"/>
                         <p>301,3rd Floor Earth Galaxy <br/> Near Thane Station (West) 400601</p>
                     </div>
                     <div className="details-content d-flex">
-                        <img src="https://ryse.radiantthemes.com/wp-content/uploads/2019/06/contact-form-new-icon2.png" alt=""/>
+                        <img src={contactphonebook} alt="PhoneNumber"/>
                         <p>Call us on: <br/> <a style={{textDecoration:'none',color:'#6A7C92'}} href="tel:+918928394609">+91 8928394609</a> <br/>
                         <a style={{textDecoration:'none',color:'#6A7C92'}} href="tel:+919967856357">+91 9967856357</a></p>
                     </div>
                     <div className="details-content d-flex">
-                        <img src="https://ryse.radiantthemes.com/wp-content/uploads/2019/06/contact-form-new-icon3.png" alt=""/>
+                        <img src={contactemail} alt="Email"/>
                         <p>Email us on: <br/><a href="mailto:info@appdid.com" style={{textDecoration:'none',color:'#6A7C92'}}>info@appdid.com</a></p>
                     </div>
                 </div>
@@ -63,9 +60,9 @@ function Contact() {
             </div>
             <div className="google-maps">
 
-                <iframe width="100%" height="350" frameborder="0" style={{border:0}}
+                <iframe width="100%" height="350" frameBorder="0" style={{border:0}}
                     src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3768.176977382834!2d72.97471931490283!3d19.187470987024057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sappdid!5e0!3m2!1sen!2sin!4v1547826422392"
-                    allowfullscreen>
+                    allowFullScreen>
                 </iframe>
             </div>
             <Footer />

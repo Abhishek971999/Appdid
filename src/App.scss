@@ -55,13 +55,17 @@ body{
     font-size: 18px;
     font-weight: 400;
   }
-  button{
+  .header-link{
     border: none;
     outline: none;
     padding: 10px 40px;
     border-radius: 5px;
     color: $primary-white;
     background: $button-bg;
+
+    &:hover,&:active{
+      text-decoration: none;
+    }
   }
 }
 
@@ -434,6 +438,97 @@ body{
     }
   }
 
+  #{&}-syllabus{
+    min-height:100vh;
+    
+    .syllabus-overview{
+      background:#262A41;
+      min-height:100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      
+      button{
+        margin-top: 0;
+        outline:none;
+        font-weight: 600 !important;
+        letter-spacing: 1px;
+        line-height: 30px;
+        background: linear-gradient(to right,#fa897d 0%,#fe5f88 100%);
+        border-radius: 3px !important;
+        color: #ffff !important;
+        padding: 10px 45px;
+        border: none;
+      }
+      .container1{
+        background: url('./images/bg1.png');
+      }
+      .container2{
+        background: url('./images/bg2.png');
+      }
+      .container3{
+        background: url('./images/bg3.png');
+      }
+      .container4{
+        background: url('./images/bg4.png');
+      }
+      .flex-container{
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 5px;
+        padding: 20px;
+        background-size: cover;
+        height: 200px;
+        border-radius:10px;
+
+        h1{
+          color:$primary-white;
+          font-size: 25px;
+          font-weight: 600;
+          text-align: center;
+          line-height: 1.2;
+        }
+      }
+    }
+    .syllabus-content{
+      padding:10px 0 50px 0;
+      h1{
+        color: $primary-blue;
+        font-size: 33px;
+        font-weight: 700;
+        line-height: 45px;
+        letter-spacing: -.3px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+        text-align:center;
+      }
+
+      .syllabus-collapse-button{
+        font-size: 15px;
+        outline: none;
+        border: none;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 2px;
+        background: white;
+        padding: 15px;
+        box-shadow: 0px 1px 6px 0 rgba(0, 0, 0, 0.08);
+    }
+      .syllabus-collapse-content{
+        background: #e5e5e583;
+        padding: 10px;
+
+        ul{
+          list-style: none;
+        }
+        
+      }
+    }
+  }
+
 }
 
 
@@ -567,4 +662,36 @@ body{
   .contact-page .contact-us-form {
     padding: 10px;
   }
+
+  //CourseDetail
+  .faculty-section{
+    text-align:center
+  }
+  .course-detail-syllabus-row{
+    margin: 0;
+    padding:0
+  }
+  .course-detail .course-detail-features {
+    padding: 50px 20px;
+}
+  .flex-container-box{
+    padding:0 10px
+  }
+  .syllabus-overview{
+    padding: 20px;
+    .syllabus-overview-row{
+      padding:0;
+      margin: 0;
+    }
+    button{
+      width: 100%;
+    }
+  }
+  .course-detail .course-detail-syllabus .syllabus-content .syllabus-collapse-button {
+    font-size:20px;
+  }
+  .course-detail .course-detail-faq .accordion {
+    padding: 0;
+}
+
 }

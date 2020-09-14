@@ -7,49 +7,46 @@ import python from '../images/python.svg'
 import industrial from '../images/industrial.svg'
 function Navbar() {
     return (
-        <nav class="navbar navbar-expand-lg  bg-transparent p-0">
+        <nav className="navbar navbar-expand-lg  bg-transparent p-0">
                 <div className="container">
-                    <a class="navbar-brand" href="#">
+                    <Link className="navbar-brand" to="/">
                     <img src={logo} alt="Appdid Training Logo" style={{maxHeight:'40px'}}/>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style={{background:'none'}}>
-                    <span class="navbar-toggler-icon">
-                        <i class="fas fa-bars" style={{color:'#fff'}}></i>
+                </Link>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style={{background:'none'}}>
+                    <span className="navbar-toggler-icon">
+                        <i className="fas fa-bars" style={{color:'#fff'}}></i>
                     </span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                    <li class="nav-item p-2">
-                        <a class="nav-link" href="#">Home</a>
+                <div className="collapse navbar-collapse justify-content-lg-end" id="navbarNavDropdown">
+                    <ul className="navbar-nav">
+                    <li className="nav-item p-2">
+                        <Link className="nav-link" to="/">Home</Link>
                     </li>
-                    <li class="nav-item p-2">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item dropdown p-2">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li className="nav-item dropdown p-2">
+                        <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Courses
-                        </a>
-                        <div class="dropdown-menu dropdownShadow" aria-labelledby="navbarDropdownMenuLink">
-                            <a className="dropdown-item p-3" href="">
+                        </Link>
+                        <div className="dropdown-menu dropdownShadow" aria-labelledby="navbarDropdownMenuLink">
+                            <Link className="dropdown-item p-3" to="/fullstack-website-development/course">
                                 <img src={web} alt="Web Development Logo" className="dropDownImage"/> 
                                 <span className="ml-2"> Website Development</span>
-                            </a>
-                            <a className="dropdown-item p-3" href="">
+                            </Link>
+                            <Link className="dropdown-item p-3" to="/application-development/course">
                                 <img src={android} alt="Android Training Logo" className="dropDownImage"/> 
                                 <span className="ml-2"> Android Training</span>
-                            </a>
-                            <a className="dropdown-item p-3" href="">
+                            </Link>
+                            <Link className="dropdown-item p-3" to="/python-course/course">
                                 <img src={python} alt="Python Training Logo" className="dropDownImage"/> 
                                 <span className="ml-2">Python Training</span>
-                            </a>
-                            <a className="dropdown-item p-3" href="">
+                            </Link>
+                            <Link className="dropdown-item p-3" to="/industrial-training/course">
                                 <img src={industrial} alt="Industrial Training Logo" className="dropDownImage"/> 
                                 <span className="ml-2">Industrial Training</span>
-                            </a>
+                            </Link>
                         </div>
                     </li>
-                    <li class="nav-item p-2">
-                        <Link class="nav-link" to="/contact">Contact</Link>
+                    <li className="nav-item p-2">
+                        <Link className="nav-link" to="/contact">Contact</Link>
                     </li>
                     </ul>
                 </div>  
