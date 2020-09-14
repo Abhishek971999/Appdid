@@ -315,6 +315,127 @@ body{
   }
 }
 
+//Course Details Page
+.course-detail{
+  min-height: 100vh;
+  #{&}-header{
+    background-image: url('https://ryse.radiantthemes.com/wp-content/uploads/2020/04/social-media-marketing.jpg');
+    background-size: cover;
+
+    h1{
+      padding: 70px 0;
+      text-align: center;
+      color: $primary-white;
+      font-size: 40px;
+      font-weight:700;
+      line-height: 61px;
+    }
+    
+  }
+
+
+  #{&}-author{
+    padding: 30px 0 50px 0;
+    background-image: url('https://ryse.radiantthemes.com/wp-content/uploads/2019/06/social-media-marketing-network-banner.png');
+    background-size: cover;
+    .faculty{
+      h1{
+        color: $primary-blue;
+        font-size: 33px;
+        font-weight: 700;
+        line-height: 45px;
+        letter-spacing: -.3px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+     .faculty-section{
+        padding:20px 0;
+
+        h1{
+          color: $primary-blue;
+          font-size: 25px;
+          font-weight: 600;
+          line-height: 35px;
+          letter-spacing: -.3px;
+          margin-bottom: 10px;
+          text-transform: capitalize;
+        }
+
+        span{
+          color:$primary-white;
+          background:#0557DF;
+          padding: 2px 10px;
+          border-radius: 5px;
+          font-size: 12px;
+        }
+
+        p{
+          color:$secondary-blue;
+          margin-top: 10px;
+        }
+   
+        .course-faculty-imgBox{
+          display: inline-block;
+          position: relative;
+          width: 150px;
+          height: 150px;
+          overflow: hidden;
+          border-radius: 50%;
+          text-align: center;
+  
+          img{
+            width: auto;
+            height: 100%;
+             border-radius: 50%;
+          }
+        }
+      }
+      
+    }
+  }
+
+  #{&}-features{
+    min-height: 50vh;
+    padding: 50px 0;
+    background: $features-bg;
+  }
+  
+  #{&}-faq{
+    min-height: 50vh;
+    padding: 50px 0;
+    h1{
+      color: $primary-blue;
+        font-size: 33px;
+        font-weight: 700;
+        line-height: 45px;
+        letter-spacing: -.3px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+    }
+
+    .accordion{
+      padding: 50px 0;
+      .course-accordion-card{
+        button{
+          width: 100%;
+          text-align: left;
+          padding: 20px;
+          font-size: 20px;
+          border: none;
+          background: $primary-white;
+          color: $primary-blue;
+          outline:none;
+          border-bottom: 1px #d8c3fd solid;
+        }
+        .course-accordion-card-body{
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+
+}
+
 
 //Footer Section
 .footerSection{
