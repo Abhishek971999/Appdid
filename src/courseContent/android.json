@@ -1,0 +1,188 @@
+{
+    "courseName": "Application Development",
+    "totalSections":17,
+    "totalTopics":66,
+    "totalProjects":2,
+    "language":"English/Hindi",
+    "syllabus": [
+        {
+            "syllabusCardID":"intro",
+            "id":"introduction",
+            "syllabusCardName": "1. Introduction to Android",
+            "syllabusCardContent":[
+                "What is android?",
+                "API versions of android",
+                "Setting up Android SDK."
+            ]
+        },
+        {
+            "syllabusCardID":"arch",
+            "id":"architecture",
+            "syllabusCardName": "2. Android Architecture.",
+            "syllabusCardContent":[
+                "OS Android",
+                "Components",
+                "Files",
+                "AVD creation"
+            ]
+        },
+        {
+            "syllabusCardID":"demo",
+            "id":"demoApp",
+            "syllabusCardName": "3. Creating Demo application",
+            "syllabusCardContent":[
+                "Setup Hello world application",
+                "Overview Xml design",
+                "Activity lifecycle"
+            ]
+        },
+        {
+            "syllabusCardID":"layout",
+            "id":"appLayout",
+            "syllabusCardName": "4. Android Layout design",
+            "syllabusCardContent":[
+                "Layouts",
+                "Button",
+                "Text view",
+                "Edit Text",
+                "Image view",
+                "Checkbox",
+                "Spinner",
+                "Date and Time picker"
+            ]
+        },
+        {
+            "syllabusCardID":"appIntent",
+            "id":"intent",
+            "syllabusCardName": "5. Intent",
+            "syllabusCardContent":[
+                "What is Intent?",
+                "Implicit Intent",
+                "Explicit Intent"
+            ]
+        },
+        {
+            "syllabusCardID":"menu",
+            "id":"appMenu",
+            "syllabusCardName": "6. Menu",
+            "syllabusCardContent":[
+                "Popup",
+                "Context",
+                "Option"
+            ]
+        },
+        {
+            "syllabusCardID":"animate",
+            "id":"animations",
+            "syllabusCardName": "7. Types of Animations",
+            "syllabusCardContent":[
+                "Scale",
+                "Rotate",
+                "Translate",
+                "Alpha"
+            ]
+        },
+        {
+            "syllabusCardID":"permission",
+            "id":"permissionApp",
+            "syllabusCardName": "8. Permissions in android app",
+            "syllabusCardContent":[
+                "Internet permissions",
+                "Call",
+                "Messages"
+            ]
+        },
+        {
+            "syllabusCardID":"map",
+            "id":"googlemap",
+            "syllabusCardName": "9. Google Map ",
+            "syllabusCardContent":[
+                "Setting up GoogleMap",
+                "Getting the current location ofuser",
+                "Changing Map view",
+                "Searching any location"
+            ]
+        },
+        {
+            "syllabusCardID":"shared",
+            "id":"sharedpref",
+            "syllabusCardName": "10. Shared Preferences",
+            "syllabusCardContent":[
+                "Introduction to Shared Preferences",
+                "How to use Shared Preferences",
+                "Maintain a login session using Shared Preferences"
+            ]
+        },
+        {
+            "syllabusCardID":"sqlite",
+            "id":"db",
+            "syllabusCardName": "11. SQLite",
+            "syllabusCardContent":[
+                "Introduction to SQLite",
+                "CURD rule using SQLite database"
+            ]
+        }
+        ,
+        {
+            "syllabusCardID":"nav",
+            "id":"navigation",
+            "syllabusCardName": "12. Navigation Drawer",
+            "syllabusCardContent":[
+                "Creating Navigation Drawer?",
+                "Adding Menu in Navigation Drawern",
+                "Customizing Navigation Drawer"
+            ]
+        }
+        ,
+        {
+            "syllabusCardID":"audiocam",
+            "id":"audiocamvideo",
+            "syllabusCardName": "13. Audio, Video and Camera",
+            "syllabusCardContent":[
+                "Playing Audio and Video",
+                "Recording Audio and Video",
+                "Using Camera for taking picture",
+                "Alarm Manager"
+            ]
+        } ,
+        {
+            "syllabusCardID":"test",
+            "id":"testing",
+            "syllabusCardName": "14. Testing and Debugging",
+            "syllabusCardContent":[
+                "What is Logcat",
+                "How to read logcat message",
+                "What is Espresso",
+                "User Interface Testing using Espresso"
+            ]
+        } ,
+        {
+            "syllabusCardID":"publish",
+            "id":"publishApp",
+            "syllabusCardName": "15. Publishing App on Playstore",
+            "syllabusCardContent":[
+                "What is debug apk and signed apk",
+                "Generating Signed Apk",
+                "Rollout apk"
+            ]
+        },
+        {
+            "syllabusCardID":"adsense",
+            "id":"adsenseAdmob",
+            "syllabusCardName": "16. Adsense and Admob",
+            "syllabusCardContent":[
+                "How to create an account on admob and adsense",
+                "How to create Ad units",
+                "How to generate Revenue from adsense and admob"
+            ]
+        },
+        {
+            "syllabusCardID":"project",
+            "id":"Project",
+            "syllabusCardName": "17. Project",
+            "syllabusCardContent":[
+                "Project"
+            ]
+        }
+    ]
+}

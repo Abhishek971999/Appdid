@@ -3,6 +3,7 @@ import Footer from './Footer'
 import Navbar from './Navbar'
 import fullstack from '../courseContent/fullstack.json'
 import python from '../courseContent/python.json'
+import android from '../courseContent/android.json'
 function CourseDetails({match:{params:{coursename}}}) {
     let course;
     switch (coursename) {
@@ -13,7 +14,7 @@ function CourseDetails({match:{params:{coursename}}}) {
             course = python;
           break;
         case "application-development":
-            course =fullstack;
+            course =android;
           break;
         case "industrial-training":
             course = python;

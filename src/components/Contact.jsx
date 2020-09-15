@@ -1,11 +1,33 @@
 import React from 'react'
+import { useSnackbar } from "react-simple-snackbar";
 import contactheader from '../images/contactheader.png'
 import contactaddress from '../images/contactaddress.png'
 import contactphonebook from '../images/contactphonebook.png'
 import contactemail from '../images/contactemail.png'
 import Navbar from './Navbar'
 import Footer from './Footer'
+
+const snackBarStyles = {
+    position: "bottom-right",
+    style: {
+    background: "linear-gradient(to right,#fa897d 0%,#fe5f88 100%)",
+      border: "2px solid #D93B8F",
+      color: "white",
+      fontFamily: "Menlo, monospace",
+      fontSize: "18px",
+      textAlign: "center"
+    },
+    closeStyle: {
+      color: "#fff",
+      fontSize: "16px"
+    }
+  };
+
+  const formSubmit = (e)=>{
+      e.preventDefault();
+  }
 function Contact() {
+    const [openSnackbar, closeSnackbar] = useSnackbar(snackBarStyles);
     return (
         <div className="contact-page">
             <div className="contact-header">
@@ -43,19 +65,21 @@ function Contact() {
                     </div>
                 </div>
                 <div className="col-sm-12 col-md-5">
-                    <div className="contact-us-form">
-                        <h1>Drop us a line</h1>
-                        <div className="form-group">
-                            <input type="text" className="form-control" id="name" aria-describedby="name"placeholder="Name"/>
+                    <form onSubmit={formSubmit}>
+                        <div className="contact-us-form">
+                            <h1>Drop us a line</h1>
+                            <div className="form-group">
+                                <input type="text" className="form-control" id="name" aria-describedby="name"placeholder="Name"/>
+                            </div>
+                            <div className="form-group">
+                                <input type="email" className="form-control" id="email" aria-describedby="email" placeholder="Email"/>
+                            </div>
+                            <div className="form-group">
+                                <textarea className="form-control" id="message" name="message" placeholder="Your Message" rows="3"></textarea>
+                            </div>
+                            <button onClick={() => openSnackbar("We will get in touch with you shortly")}>Send a Message</button>
                         </div>
-                        <div className="form-group">
-                            <input type="email" className="form-control" id="email" aria-describedby="email" placeholder="Email"/>
-                        </div>
-                        <div className="form-group">
-                            <textarea className="form-control" id="message" name="message" placeholder="Your Message" rows="3"></textarea>
-                        </div>
-                        <button>Send a Message</button>
-                    </div>
+                    </form>
                 </div>
             </div>
             <div className="google-maps">

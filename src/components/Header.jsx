@@ -15,7 +15,7 @@ function Header() {
                     </div>
                 </div>
                 <div className="col-sm-12 col-md-5">
-                    <img src={headerMainImg} alt="Jumpstart Your Career as a Developer"/>
+                    <img src={headerMainImg} alt="Jumpstart Your Career as a Developer" className="header-section-img"/>
                 </div>
             </div>
         </div>
