@@ -1,0 +1,45 @@
+[
+    {
+        "headerID":"duration",
+        "dataTarget":"courseDuration",
+        "question":"How long course would be?",
+        "answer":"30-35 hours"
+    },
+    
+    {
+        "headerID":"perdayduration",
+        "dataTarget":"perDayDuration",
+        "question":"How long time duration would be on each day?",
+        "answer":"Per session would be approx 3-4 hour max."
+    },{
+        "headerID":"offlineCourse",
+        "dataTarget":"offline",
+        "question":"Training will be Online or Offline?",
+        "answer":"Offline one to one, Training will be conducted at the Appdid Infotech Office."
+    }
+    ,
+    {
+        "headerID":"practicalCourse",
+        "dataTarget":"practical",
+        "question":"Training is Practical or theoretical?",
+        "answer":"The first session will be a conceptual overview theory session, from the second session onwards complete training will be Hands-On live coding till the last session."
+    },
+    {
+        "headerID":"laptopReq",
+        "dataTarget":"laptop",
+        "question":"Laptop/System is provided or Not?",
+        "answer":"No, we expect students should carry their laptops because we need each and every student to have code in their system and make practice at home also."
+    },
+    {
+        "headerID":"studentSupport",
+        "dataTarget":"support",
+        "question":"Any support after completion of training?",
+        "answer":"Appdid Infotech offers Lifetime support after students complete their training in any of the streams, Appdid always holds their students' hand if any help is required in the future for the same."
+    },
+    {
+        "headerID":"internshipCompulsory",
+        "dataTarget":"internshipcompulsory",
+        "question":"An internship is compulsory?",
+        "answer":"No, It's student's choice whether they want an internship or not."
+    }
+]

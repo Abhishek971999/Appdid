@@ -1,0 +1,43 @@
+[
+    {
+        "headerID":"courseLocation",
+        "dataTarget":"location",
+        "question":"What would be the location of the training?",
+        "answer":"101,1st floor Earth Galaxy railway station, Thane West, Maharashtra 400601."
+    },
+    {
+        "headerID":"courseCertificate",
+        "dataTarget":"certificate",
+        "question":"What do we get after training?",
+        "answer":"An ISO certified Training certificate and Internship letter."
+    },
+    {
+        "headerID":"trainingFee",
+        "dataTarget":"trainingfree",
+        "question":"What is the Fee for training?",
+        "answer":"It depends upon the course for more info Contact Ms. Arshin +91 9860129876."
+    },
+    {
+        "headerID":"coursePayment",
+        "dataTarget":"payment",
+        "question":"How to pay Fee Cash/Cheque/IMPS/RTGS?",
+        "answer":" We accept all types of online modes as well as cash & cheque."
+    },
+    {
+        "headerID":"feeRefund",
+        "dataTarget":"refund",
+        "question":"Fee is refundable?",
+        "answer":"The fee is non-refundable non-transferable to any other student, But you can use that fee amount for any other course within 1 year, If you fail to attend the batch for which you have paid."
+    },
+    {
+        "headerID":"freeInternship",
+        "dataTarget":"internship",
+        "question":"An internship is paid or Free?",
+        "answer":"It's a free non paid 1 Month internship will be offered just after completion of training."
+    },{
+        "headerID":"courseDays",
+        "dataTarget":"days",
+        "question":"Courses are conducted everyday alternate or weekends?",
+        "answer":"Only weekends in regular college time & sometimes in between of the week also if training is scheduled on vacation."
+    }
+]

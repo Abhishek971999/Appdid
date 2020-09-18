@@ -17,6 +17,18 @@ body{
   
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 // Navbar Styles
 .navbar{
   .nav-link{
@@ -26,6 +38,25 @@ body{
 .dropdownShadow{
   box-shadow: 0 1px 10px 0 rgba(0,0,0,.1);
 }
+.premiumCourse{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  display: inline-block;
+  color: #ffffff;
+  margin-right: 5px;
+  background-color: #FFD700;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 40px;
+  border: none;
+  transition: all 0.3s;
+}
+.premiumCourse:hover{
+  transform: scale(1.2);
+}
 .dropDownImage{
   max-width: 50px;
 }
@@ -33,7 +64,7 @@ body{
 //Header Section
 .header-section{
   min-height: 110vh;
-  background-image: url('https://codingphase.com/wp-content/uploads/2019/12/ryse-bg.png');
+  background-image: url('./images/headerBg.png');
   background-size: cover;
   background-position: bottom center;
 
@@ -101,7 +132,7 @@ body{
 
   }
   .about-textBox{
-    background-image: url('https://ryse.radiantthemes.com/wp-content/uploads/2019/09/seven-shape1.png');
+    background-image: url('./images/aboutTextBox.png');
     background-position: 400px -5px;
     background-repeat: no-repeat;
     margin-top: 50px;
@@ -499,6 +530,40 @@ body{
       justify-content: center;
       align-items: center;
       flex-direction: column;
+
+      .close{
+        background:#000;
+        color:red;
+        margin:0;
+        padding:0;
+        background: #E91E63;
+        height: 30px;
+        width: 30px;
+      }
+
+      .contact-us-form{
+        padding:30px;
+        div{
+          padding: 10px 0;
+        }
+        .form-control{
+          background-color:#F3F5FD;
+        }
+        
+
+        button{
+          margin-top: 0;
+          outline:none;
+          font-weight: 500 !important;
+          letter-spacing: 1px;
+          line-height: 30px;
+          background: linear-gradient(to right,#fa897d 0%,#fe5f88 100%);
+          border-radius: 3px !important;
+          color: #ffff !important;
+          padding: 10px 35px;
+          border: none;
+        }
+      }
       
       button{
         margin-top: 0;
@@ -657,6 +722,9 @@ body{
 
 
 @media screen and (max-width: 480px) {
+  .premiumCourse{
+    display:none
+  }
   .header-section{
     min-height: 100vh;
     

@@ -1,5 +1,10 @@
 import React from 'react'
-
+import certificate from '../images/certificate.png'
+import instructor from '../images/instructor.png'
+import independent from '../images/independent.png'
+import intern from '../images/intern.png'
+import jobinterview from '../images/jobinterview.png'
+import industry from '../images/industry.png'
 function Features() {
     return (
         <div className="features">
@@ -10,45 +15,45 @@ function Features() {
                 </div>
                 <div className="row justify-content-center">
                     <div className="col-sm-12 col-md-6 col-lg-4 d-flex feature-card my-4">
-                        <img src="https://codingphase.com/wp-content/uploads/2019/09/seven-icon1.png" className="feature-card-img" alt=""/>
+                        <img src={industry} className="feature-card-img" alt="" style={{maxWidth: "60px",marginRight: "5px"}}/>
                         <div className="feature-card-textbox">
-                            <h1>A Path For Growth</h1>
-                            <p>Grow at your own pace with the timeline all courses are in order for you to follow along.</p>
+                            <h1>Industry Project Experience</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus laborum corporis delectus repudiandae.</p>
                         </div>
                     </div>
                      <div className="col-sm-12 col-md-6 col-lg-4 d-flex feature-card my-4">
-                     <img src="https://codingphase.com/wp-content/uploads/2019/09/seven-icon2.png" className="feature-card-img" alt=""/>
+                     <img src={certificate} className="feature-card-img" alt="" style={{maxWidth: "60px",marginRight: "5px"}}/>
                         <div className="feature-card-textbox">
-                            <h1>Learn To Work On A Team</h1>
-                            <p>Use Git to prepare you to work on a team.</p>
+                            <h1>ISO Certified Certificates</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia vero deleniti nemo et.</p>
                         </div>
                     </div>
                     <div className="col-sm-12 col-md-6 col-lg-4 d-flex feature-card my-4">
-                    <img src="https://codingphase.com/wp-content/uploads/2019/09/seven-icon3.png" className="feature-card-img" alt=""/>
+                    <img src={intern}  style={{maxWidth: "60px",marginRight: "5px"}} className="feature-card-img" alt=""/>
                         <div className="feature-card-textbox">
-                            <h1>A Path For Growth</h1>
-                            <p>Grow at your own pace with the timeline all courses are in order for you to follow along.</p>
+                            <h1>Free Internship</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus laborum corporis delectus repudiandae.</p>
                         </div>
                     </div>
                     <div className="col-sm-12 col-md-6 col-lg-4 d-flex feature-card my-4">
-                        <img src="https://codingphase.com/wp-content/uploads/2019/09/seven-icon4.png" className="feature-card-img" alt=""/>
+                        <img src={jobinterview}  style={{maxWidth: "60px",marginRight: "5px"}} className="feature-card-img" alt=""/>
                         <div className="feature-card-textbox">
-                            <h1>A Path For Growth</h1>
-                            <p>Grow at your own pace with the timeline all courses are in order for you to follow along.</p>
+                            <h1>Job Interview Preparation</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus laborum corporis delectus repudiandae.</p>
                         </div>
                     </div>
                      <div className="col-sm-12 col-md-6 col-lg-4 d-flex feature-card my-4">
-                     <img src="https://codingphase.com/wp-content/uploads/2019/09/seven-icon5.png" className="feature-card-img" alt=""/>
+                     <img src={instructor}  style={{maxWidth: "60px",marginRight: "5px"}} className="feature-card-img" alt=""/>
                         <div className="feature-card-textbox">
-                            <h1>A Path For Growth</h1>
-                            <p>Grow at your own pace with the timeline all courses are in order for you to follow along.</p>
+                            <h1>One to One Interaction</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus laborum corporis delectus repudiandae.</p>
                         </div>
                     </div>
                     <div className="col-sm-12 col-md-6 col-lg-4 d-flex feature-card my-4">
-                    <img src="https://codingphase.com/wp-content/uploads/2019/09/seven-icon6.png" className="feature-card-img" alt=""/>
+                    <img src={independent}  style={{maxWidth: "60px",marginRight: "5px"}} className="feature-card-img" alt=""/>
                         <div className="feature-card-textbox">
-                            <h1>A Path For Growth</h1>
-                            <p>Grow at your own pace with the timeline all courses are in order for you to follow along.</p>
+                            <h1>Tips to generate Income</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus laborum corporis delectus repudiandae.</p>
                         </div>
                     </div>
                 </div>

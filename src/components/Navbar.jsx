@@ -4,7 +4,6 @@ import logo from '../images/logo.png'
 import web from '../images/web.svg'
 import android from '../images/android.svg'
 import python from '../images/python.svg'
-import industrial from '../images/industrial.svg'
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg  bg-transparent p-0">
@@ -27,9 +26,10 @@ function Navbar() {
                         Courses
                         </Link>
                         <div className="dropdown-menu dropdownShadow" aria-labelledby="navbarDropdownMenuLink">
-                            <Link className="dropdown-item p-3" to="/fullstack-website-development/course">
+                            <Link className="dropdown-item p-3 " to="/fullstack-website-development/course">
+                                <button  aria-label="Premium" className="premiumCourse"><i className="fas fa-star"></i></button>
                                 <img src={web} alt="Web Development Logo" className="dropDownImage"/> 
-                                <span className="ml-2"> Website Development</span>
+                                <span className="ml-2"> Fullstack Development</span>
                             </Link>
                             <Link className="dropdown-item p-3" to="/application-development/course">
                                 <img src={android} alt="Android Training Logo" className="dropDownImage"/> 
@@ -39,10 +39,7 @@ function Navbar() {
                                 <img src={python} alt="Python Training Logo" className="dropDownImage"/> 
                                 <span className="ml-2">Python Training</span>
                             </Link>
-                            <Link className="dropdown-item p-3" to="/industrial-training/course">
-                                <img src={industrial} alt="Industrial Training Logo" className="dropDownImage"/> 
-                                <span className="ml-2">Industrial Training</span>
-                            </Link>
+ 
                         </div>
                     </li>
                     <li className="nav-item p-2">
