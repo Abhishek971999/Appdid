@@ -30,7 +30,7 @@ function Footer() {
                             </li>
                             <li className="py-1"> 
                                 <p className="mb-0 footerLinks">
-                                <i className="fas fa-map-marker-alt"></i>&nbsp;&nbsp;<span >101,3rd Floor Earth Galaxy Near Thane Station (West) 400601</span>
+                                <i className="fas fa-map-marker-alt"></i>&nbsp;&nbsp;<span >101,1<sup>st</sup> Floor Earth Galaxy Near Thane Station (West) 400601</span>
                                 </p>
                             </li>
                             <li className="py-1">

@@ -1,9 +1,26 @@
 import React from 'react'
 import Footer from './Footer'
 import Navbar from './Navbar'
+import Faq from './Faq'
 import fullstack from '../courseContent/fullstack.json'
 import python from '../courseContent/python.json'
 import android from '../courseContent/android.json'
+import certificate from '../images/certificate.png'
+import curriculum from '../images/curriculum.png'
+import instructor from '../images/instructor.png'
+import emailjs from 'emailjs-com';
+
+const sendEmail = (e)=> {
+    e.preventDefault();
+    emailjs.sendForm('appdid_training', 'template_gskp8ci', e.target, 'user_Vca6PxB5Xjs3OBfUljmrZ')
+    .then((result) => {
+        document.getElementById("closeModal").click();
+    }, (error) => {
+        console.log(error.text);
+    });
+      e.target.reset();
+    
+  }
 function CourseDetails({match:{params:{coursename}}}) {
     let course;
     switch (coursename) {
@@ -15,9 +32,6 @@ function CourseDetails({match:{params:{coursename}}}) {
           break;
         case "application-development":
             course =android;
-          break;
-        case "industrial-training":
-            course = python;
           break;
       }
     return (
@@ -81,7 +95,54 @@ function CourseDetails({match:{params:{coursename}}}) {
                             </div>
                             </div>
                         </div>
-                        <button>Enroll Now</button>
+                        <button data-toggle="modal" data-target="#EnrollNow">Enroll Now</button>
+                        <div className="modal fade" id="EnrollNow" tabIndex="-1" role="dialog" aria-labelledby="EnrollNowLabel" aria-hidden="true">
+                            <div className="modal-dialog" role="document" style={{padding:0}}>
+                                <div className="modal-content">
+                                <div className="modal-header">
+                                    <h5 className="modal-title" id="EnrollNowLabel">Connect with us </h5>
+                                    <button type="button" className="close" data-dismiss="modal" aria-label="Close" id="closeModal">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div className="modal-body" style={{padding:0}}>
+                                    <form onSubmit={sendEmail}>
+                                     <div className="contact-us-form">
+                                        <div className="form-group">
+                                            <input type="text" name="name" className="form-control" id="name" aria-describedby="name"placeholder="Name"/>
+                                        </div>
+                                        <div className="form-group">
+                                            <input type="email" name="email" className="form-control" id="email" aria-describedby="email" placeholder="Email"/>
+                                        </div>
+                                       <div className="form-group">
+                                            <input type="number" name="number" className="form-control" id="number" aria-describedby="number" placeholder="Phone number"/>
+                                        </div>
+                                        <div className="form-group">
+                                            <input type="text" name="year" className="form-control" id="year" aria-describedby="year" placeholder="Year (Eg : Computer Engg 2nd year)"/>
+                                           
+                                        </div>
+                                        <div className="form-group">
+                                            <input type="text" name="location" className="form-control" id="location" aria-describedby="location" placeholder="Location (Eg : Mumbai)"/>
+                                        </div>
+                                        <div className="form-check form-check-inline mr-2">
+                                            <input className="form-check-input" name="course" type="checkbox" id="fullstack" value="Fullstack Training"/>
+                                            <label className="form-check-label" htmlFor="fullstack">FullStack</label>
+                                        </div>
+                                        <div className="form-check form-check-inline mr-2">
+                                            <input className="form-check-input" name="course" type="checkbox" id="android" value="Android Training"/>
+                                            <label className="form-check-label" htmlFor="android">Android</label>
+                                        </div>
+                                        <div className="form-check form-check-inline mr-2">
+                                            <input className="form-check-input" name="course" type="checkbox" id="python" value="Python Training"/>
+                                            <label className="form-check-label" htmlFor="python">Python</label>
+                                        </div>
+                                        <button type="submit" >Send a Message</button>
+                                    </div>
+                                    </form>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
                     </div>
                     <div className="col-sm-12 col-lg-6 syllabus-content">
                         <div className="container">
@@ -93,8 +154,11 @@ function CourseDetails({match:{params:{coursename}}}) {
                                         <div className="syllabus-card" key={key}>
                                             <div className="syllabus-card-header" id={s.syllabusCardID}>
                                             <h2 className="mb-0">
-                                                <button className="syllabus-collapse-button" type="button" data-toggle="collapse" data-target={`#${s.id}`} aria-expanded="true" aria-controls={s.id}>
+                                                <button className="syllabus-collapse-button d-flex" type="button" data-toggle="collapse" data-target={`#${s.id}`} aria-expanded="true" aria-controls={s.id}>
                                                 {s.syllabusCardName}
+                                                      <span className="flex-1 justify-content-end flex-grow-1 text-right">
+                                                        <i className="fas fa-chevron-down ml-4"></i>
+                                                      </span>
                                                 </button>
                                             </h2>
                                             </div>
@@ -125,21 +189,21 @@ function CourseDetails({match:{params:{coursename}}}) {
                     </div>
                     <div className="row justify-content-center">
                         <div className="col-sm-12 col-md-6 col-lg-4 d-flex feature-card my-4">
-                            <img src="https://codingphase.com/wp-content/uploads/2019/09/seven-icon1.png" className="feature-card-img" alt=""/>
+                            <img src={instructor} className="feature-card-img" alt="" style={{maxWidth: "60px",marginRight: "5px"}}/>
                             <div className="feature-card-textbox">
                                 <h1>Instructor</h1>
                                 <p>Our superlative faculty, an alumnus of IITs, IIITs and Stanford are resourceful, humble, organised and provide instantaneous assistance to the students.</p>
                             </div>
                         </div>
                         <div className="col-sm-12 col-md-6 col-lg-4 d-flex feature-card my-4">
-                        <img src="https://codingphase.com/wp-content/uploads/2019/09/seven-icon2.png" className="feature-card-img" alt=""/>
+                        <img src={curriculum} className="feature-card-img" alt="" style={{maxWidth: "60px",marginRight: "5px"}}/>
                             <div className="feature-card-textbox">
                                 <h1>Curriculum</h1>
                                 <p>The curriculum has been designed with the guidance from the industry mentors to help you give a solid foundation in the concepts that hold importance in the professional world.</p>
                             </div>
                         </div>
                         <div className="col-sm-12 col-md-6 col-lg-4 d-flex feature-card my-4">
-                            <img src="https://codingphase.com/wp-content/uploads/2019/09/seven-icon3.png" className="feature-card-img" alt=""/>
+                            <img src={certificate} className="feature-card-img" alt="" style={{maxWidth: "60px",marginRight: "5px"}}/>
                             <div className="feature-card-textbox">
                                 <h1>Certificate</h1>
                                 <p>You will be awarded with a course completion certificate which is ISO Certified</p>
@@ -152,100 +216,7 @@ function CourseDetails({match:{params:{coursename}}}) {
             <div className="course-detail-faq">
                 <div className="container">
                     <h1 style={{textAlign:'center'}}>Most Frequent Questions</h1>
-                    <div className="row justify-content-center">
-                        <div className="col-sm-12 col-lg-6">
-                            <div className="accordion" id="accordionExample">
-                            <div className="course-accordion-card">
-                                <div className="course-accordion-card-header" id="headingOne">
-                                <h2 className="mb-0">
-                                    <button className="accordion-collapse-button collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    how long does it take to complete this course ?
-                                    </button>
-                                </h2>
-                                </div>
-                                <div id="collapseOne" className="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                <div className="course-accordion-card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-                                </div>
-                                </div>
-                            </div>
-                            <div className="course-accordion-card">
-                                <div className="course-accordion-card-header" id="headingTwo">
-                                <h2 className="mb-0">
-                                    <button className="accordion-collapse-button collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Is this course suitable for me ?
-                                    </button>
-                                </h2>
-                                </div>
-                                <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div className="course-accordion-card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
-                                </div>
-                                </div>
-                            </div>
-                            <div className="course-accordion-card">
-                                <div className="course-accordion-card-header" id="headingFive">
-                                <h2 className="mb-0">
-                                    <button className="accordion-collapse-button collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    Is this course suitable for me ?
-                                    </button>
-                                </h2>
-                                </div>
-                                <div id="collapseFive" className="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                                <div className="course-accordion-card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div className="col-sm-12 col-lg-6">
-                            <div className="accordion" id="accordionExample">
-                            <div className="course-accordion-card">
-                                <div className="course-accordion-card-header" id="headingThree">
-                                <h2 className="mb-0">
-                                    <button className="accordion-collapse-button collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    how long does it take to complete this course ?
-                                    </button>
-                                </h2>
-                                </div>
-                                <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                <div className="course-accordion-card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-                                </div>
-                                </div>
-                            </div>
-                            <div className="course-accordion-card">
-                                <div className="course-accordion-card-header" id="headingFour">
-                                <h2 className="mb-0">
-                                    <button className="accordion-collapse-button collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Is this course suitable for me ?
-                                    </button>
-                                </h2>
-                                </div>
-                                <div id="collapseFour" className="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                                <div className="course-accordion-card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
-                                </div>
-                                </div>
-                            </div>
-                            <div className="course-accordion-card">
-                                <div className="course-accordion-card-header" id="headingSix">
-                                <h2 className="mb-0">
-                                    <button className="accordion-collapse-button collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    Is this course suitable for me ?
-                                    </button>
-                                </h2>
-                                </div>
-                                <div id="collapseSix" className="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-                                <div className="course-accordion-card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
+                    <Faq />
                 </div>
             </div>
         
