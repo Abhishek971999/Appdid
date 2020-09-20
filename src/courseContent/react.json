@@ -1,0 +1,144 @@
+{
+    "courseName": "Web Development with React and Firebase",
+    "totalSections":12,
+    "totalTopics":38,
+    "totalProjects":3,
+    "language":"English/Hindi",
+    "syllabusDropdown":true,
+    "syllabus": [
+        {
+            "syllabusCardID":"intro",
+            "id":"introduction",
+            "syllabusCardName": "1. Introduction",
+            "syllabusCardContent":[
+                "Introduction to the course",
+                "What is React?",
+                "Understanding how React works",
+                "Other Frameworks and libraries"
+            ]
+        },
+        {
+            "syllabusCardID":"understandFrontEndTech",
+            "id":"understandingFrontEndTech",
+            "syllabusCardName": "2. Understanding Front-end Technologies",
+            "syllabusCardContent":[
+                "Introduction to HTML, CSS and JavaScript",
+                "Getting started with Bootstrap ",
+                "Understanding Chrome Dev Tools ",
+                "Creating first React App "
+            ]
+        },
+        {
+            "syllabusCardID":"nextgenJS",
+            "id":"nextGenerationJS",
+            "syllabusCardName": "3. Next Generation JavaScript",
+            "syllabusCardContent":[
+                "Introduction to ES6 ",
+                "Let and const",
+                "Arrow Functions ",
+                "Imports and Exports ",
+                "Classes"
+            ]
+        },
+        {
+            "syllabusCardID":"getintoReact1",
+            "id":"gettingIntoReact1",
+            "syllabusCardName": "4. Getting into React - 1",
+            "syllabusCardContent":[
+                "Creating first React component ",
+                "Understanding react lifecycle",
+                "React props and states"
+            ]
+        },
+        {
+            "syllabusCardID":"getintoReact2",
+            "id":"gettingIntoReact2",
+            "syllabusCardName": "5. Getting into React - 2",
+            "syllabusCardContent":[
+                "List rendering",
+                "Conditional rendering",
+                "Styling react components "
+            ]
+        },
+        {
+            "syllabusCardID":"eventHandling",
+            "id":"eventHandlingInReact",
+            "syllabusCardName": "6. Event handling in React ",
+            "syllabusCardContent":[
+                "Introduction to event handling ",
+                "Two-way binding",
+                "Use of React reference"
+            ]
+        },
+        {
+            "syllabusCardID":"externalAPI",
+            "id":"externalAPIInReact",
+            "syllabusCardName": "7. Using external API's in React",
+            "syllabusCardContent":[
+                "Introduction to Fetch API "
+            ]
+        },
+        {
+            "syllabusCardID":"reactRouter",
+            "id":"reactRouterIntro",
+            "syllabusCardName": "8. React Router",
+            "syllabusCardContent":[
+                "Using React Router",
+                "Dynamic routing "
+            ]
+        },
+        {
+            "syllabusCardID":"redux",
+            "id":"intoToRedux",
+            "syllabusCardName": "9. Introduction to Redux",
+            "syllabusCardContent":[
+                "What is Redux? ",
+                "Redux store and reducers ",
+                "Dispatching actions",
+                "Connecting more components"
+            ]
+        },
+        {
+            "syllabusCardID":"moreReact",
+            "id":"moreOnReact",
+            "syllabusCardName": "10. More on React",
+            "syllabusCardContent":[
+                "Using React Suspense",
+                "Using React Hooks",
+                "Dispatching actions",
+                "Connecting more components"
+            ]
+        },
+        {
+            "syllabusCardID":"firebase",
+            "id":"firebaseInReact",
+            "syllabusCardName": "11. Using Firebase in React",
+            "syllabusCardContent":[
+                "Introduction to firebase",
+                "Creating a firebase app ",
+                "Connecting firebase and react ",
+                "Authentication using Firebase ",
+                "Using Firestore to store and retrieve Data"
+            ]
+        },
+        {
+            "syllabusCardID":"deploy",
+            "id":"deployment",
+            "syllabusCardName": "12. Deployment",
+            "syllabusCardContent":[
+                "Deploying your Application "
+            ]
+        }
+        ,
+        {
+            "syllabusCardID":"projects",
+            "id":"projectsDeveloped",
+            "syllabusCardName": "13. During the course 3 application will be developed",
+            "syllabusCardContent":[
+                "Simple To Do App ",
+                "Movie Review App ",
+                "To Do App with Firebase "
+            ]
+        }
+    ]
+}

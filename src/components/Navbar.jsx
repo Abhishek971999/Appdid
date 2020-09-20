@@ -31,6 +31,10 @@ function Navbar() {
                                 <img src={web} alt="Web Development Logo" className="dropDownImage"/> 
                                 <span className="ml-2"> Fullstack Development</span>
                             </Link>
+                            <Link className="dropdown-item p-3" to="/react-firebase-web-development/course">
+                                <img src={web} alt="Web Development Logo" className="dropDownImage"/> 
+                                <span className="ml-2"> React and Firebase Development</span>
+                            </Link>
                             <Link className="dropdown-item p-3" to="/application-development/course">
                                 <img src={android} alt="Android Training Logo" className="dropDownImage"/> 
                                 <span className="ml-2"> Android Training</span>

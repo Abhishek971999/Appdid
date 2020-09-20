@@ -2,9 +2,10 @@ import React from 'react'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import Faq from './Faq'
-import fullstack from '../courseContent/fullstack.json'
+import react from '../courseContent/react.json'
 import python from '../courseContent/python.json'
 import android from '../courseContent/android.json'
+import fullstack from '../courseContent/fullstack.json'
 import certificate from '../images/certificate.png'
 import curriculum from '../images/curriculum.png'
 import instructor from '../images/instructor.png'
@@ -22,14 +23,19 @@ const sendEmail = (e)=> {
     
   }
 function CourseDetails({match:{params:{coursename}}}) {
+    console.log(coursename)
     let course;
     switch (coursename) {
+        case "react-firebase-web-development":
+            course= react;
+            break;
         case "fullstack-website-development":
             course = fullstack;
           break;
         case "python-course":
             course = python;
           break;
+       
         case "application-development":
             course =android;
           break;
@@ -109,33 +115,38 @@ function CourseDetails({match:{params:{coursename}}}) {
                                     <form onSubmit={sendEmail}>
                                      <div className="contact-us-form">
                                         <div className="form-group">
-                                            <input type="text" name="name" className="form-control" id="name" aria-describedby="name"placeholder="Name"/>
+                                            <input type="text" name="name" aria-labelledby="name" className="form-control" id="name" aria-describedby="name"placeholder="Name"/>
                                         </div>
                                         <div className="form-group">
-                                            <input type="email" name="email" className="form-control" id="email" aria-describedby="email" placeholder="Email"/>
+                                            <input type="email" name="email" aria-labelledby="email" className="form-control" id="email" aria-describedby="email" placeholder="Email"/>
                                         </div>
                                        <div className="form-group">
-                                            <input type="number" name="number" className="form-control" id="number" aria-describedby="number" placeholder="Phone number"/>
+                                            <input type="number" name="number" aria-labelledby="number" className="form-control" id="number" aria-describedby="number" placeholder="Phone number"/>
                                         </div>
                                         <div className="form-group">
-                                            <input type="text" name="year" className="form-control" id="year" aria-describedby="year" placeholder="Year (Eg : Computer Engg 2nd year)"/>
+                                            <input type="text" name="year" aria-labelledby="year" className="form-control" id="year" aria-describedby="year" placeholder="Year (Eg : Computer Engg 2nd year)"/>
                                            
                                         </div>
                                         <div className="form-group">
-                                            <input type="text" name="location" className="form-control" id="location" aria-describedby="location" placeholder="Location (Eg : Mumbai)"/>
+                                            <input type="text" name="location" aria-labelledby="location" className="form-control" id="location" aria-describedby="location" placeholder="Location (Eg : Mumbai)"/>
                                         </div>
                                         <div className="form-check form-check-inline mr-2">
-                                            <input className="form-check-input" name="course" type="checkbox" id="fullstack" value="Fullstack Training"/>
-                                            <label className="form-check-label" htmlFor="fullstack">FullStack</label>
+                                            <input className="form-check-input" aria-labelledby="course" name="course" type="checkbox" id="fullstack" value="Fullstack Training"/>
+                                            <label className="form-check-label" htmlFor="fullstack">FullStack Development</label>
                                         </div>
                                         <div className="form-check form-check-inline mr-2">
-                                            <input className="form-check-input" name="course" type="checkbox" id="android" value="Android Training"/>
-                                            <label className="form-check-label" htmlFor="android">Android</label>
+                                            <input className="form-check-input" aria-labelledby="course" name="course" type="checkbox" id="fullstack" value="React and Firebase Development"/>
+                                            <label className="form-check-label" htmlFor="fullstack">React and Firebase Development</label>
+                                        </div>
+                                        <br/>
+                                        <div className="form-check form-check-inline mr-2">
+                                            <input className="form-check-input" aria-labelledby="course" name="course" type="checkbox" id="android" value="Android Training"/>
+                                            <label className="form-check-label" htmlFor="android">Application Development</label>
                                         </div>
                                         <div className="form-check form-check-inline mr-2">
-                                            <input className="form-check-input" name="course" type="checkbox" id="python" value="Python Training"/>
-                                            <label className="form-check-label" htmlFor="python">Python</label>
-                                        </div>
+                                            <input className="form-check-input" aria-labelledby="course" name="course" type="checkbox" id="python" value="Python Training"/>
+                                            <label className="form-check-label" htmlFor="python">Python Training</label>
+                                        </div><br/>
                                         <button type="submit" >Send a Message</button>
                                     </div>
                                     </form>
@@ -149,23 +160,42 @@ function CourseDetails({match:{params:{coursename}}}) {
                             <h1>Syllabus</h1>
                             <div className="accordion" id="syllabusAccordion">
                               {
-                                  course.syllabus.map((s,key)=>{
-                                      return(
-                                        <div className="syllabus-card" key={key}>
-                                            <div className="syllabus-card-header" id={s.syllabusCardID}>
-                                            <h2 className="mb-0">
-                                                <button className="syllabus-collapse-button d-flex" type="button" data-toggle="collapse" data-target={`#${s.id}`} aria-expanded="true" aria-controls={s.id}>
-                                                {s.syllabusCardName}
-                                                      <span className="flex-1 justify-content-end flex-grow-1 text-right">
-                                                        <i className="fas fa-chevron-down ml-4"></i>
-                                                      </span>
-                                                </button>
-                                            </h2>
-                                            </div>
-                                            <div id={s.id} className="collapse syllabus-collapse-content" aria-labelledby={s.syllabusCardID} data-parent="#syllabusAccordion">
+                                  course.syllabusDropdown?(
+                                    course.syllabus.map((s,key)=>{
+                                        return(
+                                          <div className="syllabus-card" key={key}>
+                                              <div className="syllabus-card-header" id={s.syllabusCardID}>
+                                              <h2 className="mb-0">
+                                                  <button className="syllabus-collapse-button d-flex" type="button" data-toggle="collapse" data-target={`#${s.id}`} aria-expanded="true" aria-controls={s.id}>
+                                                  {s.syllabusCardName}
+                                                        <span className="flex-1 justify-content-end flex-grow-1 text-right">
+                                                          <i className="fas fa-chevron-down ml-4"></i>
+                                                        </span>
+                                                  </button>
+                                              </h2>
+                                              </div>
+                                              <div id={s.id} className="collapse syllabus-collapse-content" aria-labelledby={s.syllabusCardID} data-parent="#syllabusAccordion">
+                                                  <ul>
+                                                      {
+                                                          s.syllabusCardContent.map((content,key)=>{
+                                                              return(
+                                                                  <li key={key}>{`${key+1}. ${content}`}</li>
+                                                              )
+                                                          })
+                                                      }
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                        )
+                                    })
+                                  ):(
+                                      course.syllabus.map((s,key)=>{
+                                          return(
+                                            <div className="syllabus-card2" key={key}>
+                                                <h2>{s.name}</h2>
                                                 <ul>
                                                     {
-                                                        s.syllabusCardContent.map((content,key)=>{
+                                                        s.syllabus.map((content,key)=>{
                                                             return(
                                                                 <li key={key}>{`${key+1}. ${content}`}</li>
                                                             )
@@ -173,9 +203,9 @@ function CourseDetails({match:{params:{coursename}}}) {
                                                     }
                                                 </ul>
                                             </div>
-                                        </div>
-                                      )
-                                  })
+                                          )
+                                      })
+                                  )
                               }
                             </div>
                         </div>

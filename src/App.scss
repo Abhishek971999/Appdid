@@ -73,6 +73,41 @@ input[type=number] {
     justify-content: center;
     align-items: center;
 
+    .close{
+      background:#000;
+      color:white;
+      margin:0;
+      padding:0;
+      background: #E91E63;
+      height: 30px;
+      width: 30px;
+    }
+
+    .contact-us-form{
+      padding:30px;
+      div{
+        padding: 10px 0;
+      }
+      .form-control{
+        background-color:#F3F5FD;
+      }
+      
+
+      button{
+        margin-top: 0;
+        outline:none;
+        font-weight: 500 !important;
+        letter-spacing: 1px;
+        line-height: 30px;
+        background: linear-gradient(to right,#fa897d 0%,#fe5f88 100%);
+        border-radius: 3px !important;
+        color: #ffff !important;
+        padding: 10px 35px;
+        border: none;
+      }
+    }
+    
+
   }
   #{&}-maintext{
     color: $primary-white;
@@ -87,12 +122,16 @@ input[type=number] {
     font-weight: 400;
   }
   .header-link{
-    border: none;
-    outline: none;
-    padding: 10px 40px;
-    border-radius: 5px;
-    color: $primary-white;
     background: $button-bg;
+    margin-top: 0;
+    outline:none;
+    font-weight: 500 !important;
+    letter-spacing: 1px;
+    line-height: 30px;
+    border-radius: 3px !important;
+    color: #ffff !important;
+    padding: 10px 35px;
+    border: none;
 
     &:hover,&:active{
       text-decoration: none;
@@ -533,7 +572,7 @@ input[type=number] {
 
       .close{
         background:#000;
-        color:red;
+        color:white;
         margin:0;
         padding:0;
         background: #E91E63;
@@ -621,6 +660,32 @@ input[type=number] {
         text-transform: capitalize;
         text-align:center;
       }
+
+      .syllabus-card2{
+
+        padding:0 50px;
+
+        ul{
+          list-style: none;
+
+          li{
+            font-size: 20px;
+          }
+        }
+
+        h2{
+          color: $features-bg;
+          font-size: 25px;
+          font-weight: 500;
+          line-height: 35px;
+          letter-spacing: -.3px;
+          margin-bottom: 20px;
+          text-transform: capitalize;
+        }
+
+      }
+
+     
 
       .syllabus-collapse-button{
         font-size: 15px;

@@ -4,6 +4,7 @@
     "totalTopics":66,
     "totalProjects":2,
     "language":"English/Hindi",
+    "syllabusDropdown":true,
     "syllabus": [
         {
             "syllabusCardID":"intro",
