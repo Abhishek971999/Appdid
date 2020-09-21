@@ -13,7 +13,7 @@ import emailjs from 'emailjs-com';
 
 const sendEmail = (e)=> {
     e.preventDefault();
-    emailjs.sendForm('appdid_training', 'template_gskp8ci', e.target, 'user_Vca6PxB5Xjs3OBfUljmrZ')
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
     .then((result) => {
         document.getElementById("closeModal").click();
     }, (error) => {
